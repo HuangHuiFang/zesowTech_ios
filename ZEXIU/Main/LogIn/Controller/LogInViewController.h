@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
-#import "LogInApi.h"
-#import "LoginModel.h"
+//#import "AppDelegate.h"
+//#import "LogInApi.h"
+//#import "LoginModel.h"
 
-#import "UMengSocialLoginViewController.h"
-#import "UMengSocialViewController.h"
-#import "LoggerViewController.h"
-#import "BaiDuCoordinateModel.h"
-#import "BaiDuMapViewController.h"
-#import "JSPatchViewController.h"
+//#import "UMengSocialLoginViewController.h"
+//#import "UMengSocialViewController.h"
+//#import "LoggerViewController.h"
+//#import "BaiDuCoordinateModel.h"
+//#import "BaiDuMapViewController.h"
+//#import "JSPatchViewController.h"
 
 @interface LogInViewController : UIViewController
 

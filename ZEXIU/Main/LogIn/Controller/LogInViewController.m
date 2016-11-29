@@ -21,15 +21,15 @@
   
     
     //测试日志
-    DDLogError(@"测试 Error 信息");
-    DDLogWarn(@"测试 Warn 信息");
-    DDLogDebug(@"测试 Debug 信息");
-    DDLogInfo(@"测试 Info 信息");
-    DDLogVerbose(@"测试 Verbose 信息");
+//    DDLogError(@"测试 Error 信息");
+//    DDLogWarn(@"测试 Warn 信息");
+//    DDLogDebug(@"测试 Debug 信息");
+//    DDLogInfo(@"测试 Info 信息");
+//    DDLogVerbose(@"测试 Verbose 信息");
     
     
     //登录成功后跳转到首页
-    [((AppDelegate*) AppDelegateInstance) setupHomeViewController];
+//    [((AppDelegate*) AppDelegateInstance) setupHomeViewController];
     
 //    测试登录及网络请求
 //    LogInApi *reg = [[LogInApi alloc] initWithUsername:@"username" password:@"password"];

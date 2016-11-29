@@ -10,21 +10,21 @@
 #define PrefixHeader_pch
 
 //引入Masonry两个宏 便于写布局代码
-//#define MAS_SHORTHAND
-//#define MAS_SHORTHAND_GLOBALS
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
 //
 #import <Foundation/Foundation.h>
 //#import <DDLog.h>
 //#import <CocoaLumberjack.h>
-//#import <AFNetworking/AFNetworking.h>
-//#import <Masonry/Masonry.h>
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry/Masonry.h>
 //#import <YYText/YYText.h>
 //#import <JSONModel/JSONModel.h>
 //#import <ReactiveCocoa/ReactiveCocoa.h>
 //#import <ReactiveCocoa/RACEXTScope.h>
-//#import "UIImageView+WebCache.h"
-//#import "MBProgressHUD.h"
-//#import "MBProgressHUD+MP.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MP.h"
 //#import "MWPhotoBrowser.h"
 //#import "KeyboardManager.h"
 #import "Macros.h"
@@ -38,6 +38,7 @@
 //#import "GVUserDefaults+BBProperties.h"
 //#import "MPRequstFailedHelper.h"
 //#import "MPUmengHelper.h"
-#import "YTKBaseRequest.h"
+#import "YTKNetwork.h"
 #import "BaseRequestService.h"
+
 #endif /* PrefixHeader_pch */
