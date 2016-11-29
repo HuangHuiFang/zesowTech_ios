@@ -47,7 +47,7 @@
 }
 
 - (NSTimeInterval)requestTimeoutInterval {
-    return 60;
+    return 120;
 }
 
 - (id)requestArgument {
