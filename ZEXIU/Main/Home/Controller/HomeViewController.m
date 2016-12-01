@@ -9,6 +9,9 @@
 #import "HomeViewController.h"
 #import "SDCycleScrollView.h"
 #import "HomeCell.h"
+
+static NSString *const dataUrl = @"http://www.qinto.com/wap/index.php?ctl=article_cate&act=api_app_getarticle_cate&num=1&p=7";
+
 @interface HomeViewController ()<SDCycleScrollViewDelegate>
 @property (nonatomic, strong) SDCycleScrollView *cycleScrollView;
 @end
@@ -29,8 +32,19 @@
 }
 
 - (void)requestData {
-    
+    NSString *url = dataUrl;
+    [PPNetworkHelper GET:url parameters:nil success:^(id responseObject) {
+        
+        DLog(@"%@",responseObject);
+        
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error);
+        
+    }];
+
+
 }
+
 - (SDCycleScrollView*)cycleScrollView {
     if (!_cycleScrollView) {
         _cycleScrollView = [[SDCycleScrollView alloc]initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 140)];

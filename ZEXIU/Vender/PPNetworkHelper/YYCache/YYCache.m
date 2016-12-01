@@ -43,11 +43,11 @@
 }
 
 + (instancetype)cacheWithName:(NSString *)name {
-    return [[self alloc] initWithName:name];
+	return [[YYCache alloc] initWithName:name];
 }
 
 + (instancetype)cacheWithPath:(NSString *)path {
-    return [[self alloc] initWithPath:path];
+    return [[YYCache alloc] initWithPath:path];
 }
 
 - (BOOL)containsObjectForKey:(NSString *)key {
@@ -85,12 +85,7 @@
             block(key, object);
         });
     } else {
-        [_diskCache objectForKey:key withBlock:^(NSString *key, id<NSCoding> object) {
-            if (object && ![_memoryCache objectForKey:key]) {
-                [_memoryCache setObject:object forKey:key];
-            }
-            block(key, object);
-        }];
+        [_diskCache objectForKey:key withBlock:block];
     }
 }
 

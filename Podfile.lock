@@ -20,13 +20,9 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
-  - PPNetworkHelper (0.4.0):
-    - AFNetworking
-    - YYCache
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -36,7 +32,6 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.0.0)
   - MJExtension
   - MJRefresh (~> 3.1.0)
-  - PPNetworkHelper (~> 0.4.0)
   - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
@@ -47,10 +42,8 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  PPNetworkHelper: 1f5f3765d32f742f3ca62c90d8d4e404da6a7097
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: af820564970dbc6ee16a26e0f737d31fa9ef7436
+PODFILE CHECKSUM: adc8bd5e3f196a7ebf95db33be4c94d15e6190f4
 
 COCOAPODS: 1.1.1

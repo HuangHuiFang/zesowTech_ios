@@ -15,4 +15,6 @@ static NSString* const kMail_cc_ToRecipients_Address=@"mobileproject@126.com";
 //网络状态监控地址
 static NSString* const kURL_Reachability__Address=@"www.baidu.com";
 
+static NSString *const kBase_URL = @"";
+
 #endif /* MBConstants_h */

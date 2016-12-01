@@ -554,14 +554,11 @@ static UIApplication *_YYSharedApplication() {
             char *key = (char *)sqlite3_column_text(stmt, 0);
             char *filename = (char *)sqlite3_column_text(stmt, 1);
             int size = sqlite3_column_int(stmt, 2);
-            NSString *keyStr = key ? [NSString stringWithUTF8String:key] : nil;
-            if (keyStr) {
-                YYKVStorageItem *item = [YYKVStorageItem new];
-                item.key = key ? [NSString stringWithUTF8String:key] : nil;
-                item.filename = filename ? [NSString stringWithUTF8String:filename] : nil;
-                item.size = size;
-                [items addObject:item];
-            }
+            YYKVStorageItem *item = [YYKVStorageItem new];
+            item.key = key ? [NSString stringWithUTF8String:key] : nil;
+            item.filename = filename ? [NSString stringWithUTF8String:filename] : nil;
+            item.size = size;
+            [items addObject:item];
         } else if (result == SQLITE_DONE) {
             break;
         } else {
@@ -719,8 +716,8 @@ static UIApplication *_YYSharedApplication() {
         if (![self _dbOpen] || ![self _dbInitialize]) {
             [self _dbClose];
             NSLog(@"YYKVStorage init error: fail to open sqlite db.");
-            return nil;
         }
+        return nil;
     }
     [self _fileEmptyTrashInBackground]; // empty the trash if failed at last time
     return self;
@@ -849,7 +846,7 @@ static UIApplication *_YYSharedApplication() {
             }
             if ([self _dbDeleteItemsWithTimeEarlierThan:time]) {
                 [self _dbCheckpoint];
-                return YES;
+                return NO;
             }
         } break;
     }
