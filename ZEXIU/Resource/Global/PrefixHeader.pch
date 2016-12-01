@@ -18,6 +18,7 @@
 //#import <CocoaLumberjack.h>
 #import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
+#import "UIView+Extension.h"
 //#import <YYText/YYText.h>
 //#import <JSONModel/JSONModel.h>
 //#import <ReactiveCocoa/ReactiveCocoa.h>
@@ -38,7 +39,6 @@
 //#import "GVUserDefaults+BBProperties.h"
 //#import "MPRequstFailedHelper.h"
 //#import "MPUmengHelper.h"
-#import "YTKNetwork.h"
-#import "BaseRequestService.h"
+
 
 #endif /* PrefixHeader_pch */

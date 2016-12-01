@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CYLTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PPNetworkHelper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ZEXIU.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,7 +54,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>YTKNetwork.xcscheme</key>
+		<key>YYCache.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,7 +62,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>313F0D59C60360C18C44395DD41FD38D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AF9BEE299B0D79F062ECCB94752C125</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>58FE0486E83AA749B9E8C1300B64E2A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,6 +88,16 @@
 			<true/>
 		</dict>
 		<key>731AF3A25A94A986DE44BA2F50B84320</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A395D917EAC0011A633C1EB3E9EB57CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD388E55CBA2749609752E7890BC408A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MPHomeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,14 +20,19 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    //        //2.取得storybaord中第一个控制器对象
-    UIViewController *viewcontroller = [storyboard instantiateInitialViewController];
-    self.window.rootViewController = viewcontroller;
+    [self setupHomeViewController];
     return YES;
 }
 
+//首页
+-(void)setupHomeViewController
+{
+    MPHomeViewController *tabBarController = [[MPHomeViewController alloc] init];
+    [self.window setRootViewController:tabBarController];
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

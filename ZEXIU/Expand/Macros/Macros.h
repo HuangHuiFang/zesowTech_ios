@@ -164,5 +164,10 @@
 //最大的上传图片张数
 #define kupdateMaximumNumberOfImage 12
 
+#ifdef DEBUG
+#define DLog( s, ... ) NSLog( @"<%p %@:(%d)>\n %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )//分别是方法地址，文件名，在文件的第几行，自定义输出内容
+#else
+#define DLog( s, ... )
+#endif
 
 
